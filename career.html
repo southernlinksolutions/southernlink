@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career | SouthernLink</title>
+  <meta name="description" content="Career opportunities at SouthernLink. Join our team and send your application to hr@southernlink.com.au." />
+  <link rel="icon" type="image/png" href="medias/icon.png" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#eff6ff',
+              600: '#2563eb',
+              700: '#1d4ed8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="career" class="bg-white text-slate-800 antialiased flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <div id="site-header"></div>
+
+  <main class="flex-grow">
+    
+    <!-- ========================================================
+         PAGE HERO BANNER (NEC Professional Services Banner)
+         ======================================================== -->
+    <section class="relative min-h-[260px] md:min-h-[320px] flex items-center justify-center overflow-hidden">
+      <img src="medias/nec-digital-transformation-banner.jpg" 
+           alt="SouthernLink Careers Banner" 
+           class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-slate-950/60 backdrop-blur-[1px]"></div>
+      <div class="relative container mx-auto px-4 lg:px-8 text-center text-white py-12 md:py-16">
+        <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-blue-200 text-xs md:text-sm font-semibold tracking-wider uppercase mb-4">
+          People & Culture
+        </div>
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight uppercase mb-4 drop-shadow-md">
+          Career Opportunities
+        </h1>
+        <p class="text-base md:text-lg text-slate-200 max-w-2xl mx-auto leading-relaxed drop-shadow">
+          Join our passionate team delivering smart, reliable, and innovative technology solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         CAREER INVITATION & EMAIL SUBMISSION (Vùng chữ nhật sáng xám)
+         ======================================================== -->
+    <section class="py-16 md:py-20 bg-white">
+      <div class="container mx-auto px-4 lg:px-8 max-w-3xl text-center space-y-8">
+        
+        <div class="space-y-4">
+          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+            Join Our Team
+          </h2>
+          <p class="text-base md:text-lg text-slate-600 leading-relaxed">
+            At SouthernLink, we welcome developers, software engineers, IT specialists, and technology enthusiasts who are passionate about building practical digital solutions.
+          </p>
+          <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+            If you are interested in exploring opportunities with our team, we would love to hear from you. Please email your CV and a brief introduction to:
+          </p>
+        </div>
+
+        <!-- Vùng chữ nhật bo góc show thông tin màu sáng xám -->
+        <div class="p-8 rounded-xl bg-neutral-100 border border-neutral-200 shadow-sm max-w-lg mx-auto space-y-3">
+          <div class="text-xs uppercase font-bold tracking-wider text-slate-500">
+            Send your application directly to
+          </div>
+          <div>
+            <a href="mailto:hr@southernlink.com.au" class="text-xl md:text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
+              hr@southernlink.com.au
+            </a>
+          </div>
+          <p class="text-xs text-slate-500">
+            Our Human Resources team will review your application and get in touch with relevant openings.
+          </p>
+        </div>
+
+        <div class="pt-2">
+          <a href="mailto:hr@southernlink.com.au?subject=Job%20Application%20-%20SouthernLink" class="btn-precision-red">
+            <span>Email Us Your Resume</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div id="site-footer"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

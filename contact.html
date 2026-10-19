@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | SouthernLink</title>
+  <meta name="description" content="Get in touch with SouthernLink. Email: enquiry@southernlink.com.au | Phone: +61 452 603 468" />
+  <link rel="icon" type="image/png" href="medias/icon.png" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#eff6ff',
+              600: '#2563eb',
+              700: '#1d4ed8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="contact" class="bg-white text-slate-800 antialiased flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <div id="site-header"></div>
+
+  <main class="flex-grow">
+    
+    <!-- ========================================================
+         PAGE HERO BANNER (NEC Professional Services Banner)
+         ======================================================== -->
+    <section class="relative min-h-[260px] md:min-h-[320px] flex items-center justify-center overflow-hidden">
+      <img src="medias/nec-it-consulting-banner.jpg" 
+           alt="Contact SouthernLink Banner" 
+           class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-slate-950/60 backdrop-blur-[1px]"></div>
+      <div class="relative container mx-auto px-4 lg:px-8 text-center text-white py-12 md:py-16">
+        <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-blue-200 text-xs md:text-sm font-semibold tracking-wider uppercase mb-4">
+          Get In Touch
+        </div>
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight uppercase mb-4 drop-shadow-md">
+          Contact Us
+        </h1>
+        <p class="text-base md:text-lg text-slate-200 max-w-2xl mx-auto leading-relaxed drop-shadow">
+          Feel free to reach out for business inquiries, software solutions, or any questions.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         CONTACT INFORMATION & SIMPLE FORM (NguyenLeThanh Style)
+         ======================================================== -->
+    <section class="py-12 md:py-16 bg-white">
+      <div class="container mx-auto px-4 lg:px-8 max-w-5xl">
+        
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          
+          <!-- Left: Contact Information (Vùng chữ nhật bo góc màu sáng xám) -->
+          <div class="space-y-6">
+            <h2 class="text-2xl font-bold text-slate-900">
+              Contact Information
+            </h2>
+            <p class="text-sm md:text-base text-slate-600 leading-relaxed">
+              You can reach out to us using the contact details below. We are here to answer your questions and discuss your project.
+            </p>
+
+            <div class="space-y-4 pt-2">
+              <div class="bg-neutral-100 p-5 rounded-xl border border-neutral-200">
+                <h3 class="font-semibold text-slate-900 text-sm mb-1">Email</h3>
+                <a href="mailto:enquiry@southernlink.com.au" class="text-sm text-blue-600 hover:underline">
+                  enquiry@southernlink.com.au
+                </a>
+              </div>
+
+              <div class="bg-neutral-100 p-5 rounded-xl border border-neutral-200">
+                <h3 class="font-semibold text-slate-900 text-sm mb-1">Phone</h3>
+                <a href="tel:+61452603468" class="text-sm text-blue-600 hover:underline">
+                  +61 452 603 468
+                </a>
+              </div>
+
+              <div class="bg-neutral-100 p-5 rounded-xl border border-neutral-200">
+                <h3 class="font-semibold text-slate-900 text-sm mb-1">Location</h3>
+                <p class="text-sm text-slate-700">
+                  Level 3/89 Pirie St, Adelaide SA 5000
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form (Vùng chữ nhật bo góc màu sáng xám) -->
+          <div class="bg-neutral-100 p-6 md:p-8 rounded-xl border border-neutral-200 shadow-sm">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">
+              Send a Message
+            </h2>
+
+            <div id="contact-status" class="mb-4"></div>
+
+            <form id="contact-form" class="space-y-4">
+              <div>
+                <label for="name" class="block text-xs font-semibold text-slate-700 mb-1">
+                  Name *
+                </label>
+                <input type="text" id="name" required placeholder="Your name" 
+                       class="w-full px-4 py-2.5 rounded-lg border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm" />
+              </div>
+
+              <div>
+                <label for="phone" class="block text-xs font-semibold text-slate-700 mb-1">
+                  Phone
+                </label>
+                <input type="tel" id="phone" placeholder="Your phone number" 
+                       class="w-full px-4 py-2.5 rounded-lg border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm" />
+              </div>
+
+              <div>
+                <label for="email" class="block text-xs font-semibold text-slate-700 mb-1">
+                  Email *
+                </label>
+                <input type="email" id="email" required placeholder="you@example.com" 
+                       class="w-full px-4 py-2.5 rounded-lg border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm" />
+              </div>
+
+              <div>
+                <label for="service" class="block text-xs font-semibold text-slate-700 mb-1">
+                  Service Interested In
+                </label>
+                <select id="service" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Website Design & Development">Website Design & Development</option>
+                  <option value="Custom Software & Application Development">Custom Software & Application Development</option>
+                  <option value="IT & ICT Solutions">IT & ICT Solutions</option>
+                  <option value="Data Analytics & Database Management">Data Analytics & Database Management</option>
+                  <option value="System Integration & Automation">System Integration & Automation</option>
+                  <option value="IT Consulting & Technical Support">IT Consulting & Technical Support</option>
+                  <option value="Digital Transformation Solutions">Digital Transformation Solutions</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="message" class="block text-xs font-semibold text-slate-700 mb-1">
+                  Message *
+                </label>
+                <textarea id="message" required rows="4" placeholder="Write your message..." 
+                          class="w-full px-4 py-2.5 rounded-lg border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"></textarea>
+              </div>
+
+              <div class="pt-2">
+                <button type="submit" class="w-full btn-precision-red justify-center text-sm py-3 font-semibold">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div id="site-footer"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
