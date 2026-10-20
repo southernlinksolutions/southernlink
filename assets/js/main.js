@@ -6,9 +6,9 @@
 const SITE_CONFIG = {
   name: "SouthernLink",
   tagline: "Delivering smart, reliable, and innovative technology solutions.",
-  email: "enquiry@southernlink.com.au",
+  email: "contact@southernlink.com.au",
   hrEmail: "hr@southernlink.com.au",
-  phone: "+61 452 603 468",
+  phone: "+61 652 603 468",
   location: "Level 3/89 Pirie St, Adelaide SA 5000",
   logo: "medias/logo.png",
   icon: "medias/icon.png"

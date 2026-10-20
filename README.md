@@ -48,8 +48,8 @@ SouthernLink_WebSite/
    - Digital Transformation Solutions
 
 4. **Thông tin liên hệ chuẩn xác & Form tương tác**:
-   - **Email**: [enquiry@southernlink.com.au](mailto:enquiry@southernlink.com.au)
-   - **Phone**: [+61 452 603 468](tel:+61452603468)
+   - **Email**: [contact@southernlink.com.au](mailto:contact@southernlink.com.au)
+   - **Phone**: [+61 652 603 468](tel:+61652603468)
    - **Địa điểm**: Level 3/89 Pirie St, Adelaide SA 5000
    - Form gửi thông điệp và đăng ký tư vấn miễn phí với phản hồi tương tác trực tiếp ngay trên trang.
 
