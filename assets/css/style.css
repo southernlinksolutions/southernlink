@@ -1,12 +1,12 @@
-/* SouthernLink Official Stylesheet */
+
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --primary: #2563eb;       /* Primary Blue like nguyenlethanh.com */
+  --primary: #2563eb;
   --primary-hover: #1d4ed8;
-  --secondary: #0f172a;     /* Deep Slate */
+  --secondary: #0f172a;
   --neutral-bg: #f8fafc;
-  --neutral-card: #f3f4f6;  /* Sáng xám */
+  --neutral-card: #f3f4f6;
   --surface-white: #ffffff;
 }
 
@@ -21,9 +21,6 @@ h1, h2, h3, h4, .font-heading {
   font-family: 'Poppins', sans-serif;
 }
 
-/* ==========================================================
-   Precision Software Style Hero Slider
-   ========================================================== */
 .hero-slider-container {
   position: relative;
   width: 100%;
@@ -90,7 +87,6 @@ h1, h2, h3, h4, .font-heading {
   padding: 0 1.5rem;
 }
 
-/* Slide Text Animations */
 .hero-slide.active .hero-badge {
   animation: slideInDown 0.8s ease-out forwards;
 }
@@ -140,10 +136,6 @@ h1, h2, h3, h4, .font-heading {
   }
 }
 
-/* ==========================================================
-   Buttons (NguyenLeThanh Primary Blue Style)
-   ========================================================== */
-.btn-precision-red,
 .btn-primary {
   background-color: var(--primary);
   color: #ffffff;
@@ -159,7 +151,6 @@ h1, h2, h3, h4, .font-heading {
   text-decoration: none;
 }
 
-.btn-precision-red:hover,
 .btn-primary:hover {
   background-color: var(--primary-hover);
   transform: translateY(-1px);
@@ -167,7 +158,6 @@ h1, h2, h3, h4, .font-heading {
   color: #ffffff;
 }
 
-.btn-precision-outline,
 .btn-outline {
   background-color: transparent;
   color: #ffffff;
@@ -183,7 +173,6 @@ h1, h2, h3, h4, .font-heading {
   text-decoration: none;
 }
 
-.btn-precision-outline:hover,
 .btn-outline:hover {
   background-color: #ffffff;
   color: #0f172a;
@@ -191,7 +180,6 @@ h1, h2, h3, h4, .font-heading {
   transform: translateY(-1px);
 }
 
-/* Slider Controls */
 .slider-arrow {
   position: absolute;
   top: 50%;
@@ -249,9 +237,6 @@ h1, h2, h3, h4, .font-heading {
   background: #ffffff;
 }
 
-/* ==========================================================
-   Vùng chữ nhật bo góc show thông tin màu sáng xám (Cards)
-   ========================================================== */
 .info-card-gray {
   background-color: #f3f4f6;
   border: 1px solid #e5e7eb;
@@ -264,7 +249,6 @@ h1, h2, h3, h4, .font-heading {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Hide scrollbar for technology album carousel */
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }

@@ -7,7 +7,6 @@
   <meta name="description" content="Get in touch with SouthernLink. Email: contact@southernlink.com.au | Phone: +61 652 603 468" />
   <link rel="icon" type="image/png" href="medias/icon.png" />
 
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -24,23 +23,18 @@
       }
     }
   </script>
-  
-  <!-- Custom Stylesheet -->
+
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body data-page="contact" class="bg-white text-slate-800 antialiased flex flex-col min-h-screen">
 
-  <!-- Header -->
   <div id="site-header"></div>
 
   <main class="flex-grow">
-    
-    <!-- ========================================================
-         PAGE HERO BANNER (NEC Professional Services Banner)
-         ======================================================== -->
+
     <section class="relative min-h-[260px] md:min-h-[320px] flex items-center justify-center overflow-hidden">
-      <img src="medias/nec-it-consulting-banner.jpg" 
-           alt="Contact SouthernLink Banner" 
+      <img src="medias/sl-it-consulting-banner.jpg"
+           alt="Contact SouthernLink Banner"
            class="absolute inset-0 w-full h-full object-cover" />
       <div class="absolute inset-0 bg-slate-950/60 backdrop-blur-[1px]"></div>
       <div class="relative container mx-auto px-4 lg:px-8 text-center text-white py-12 md:py-16">
@@ -56,15 +50,11 @@
       </div>
     </section>
 
-    <!-- ========================================================
-         CONTACT INFORMATION & SIMPLE FORM (NguyenLeThanh Style)
-         ======================================================== -->
     <section class="py-12 md:py-16 bg-white">
       <div class="container mx-auto px-4 lg:px-8 max-w-5xl">
-        
+
         <div class="grid md:grid-cols-2 gap-12 items-start">
-          
-          <!-- Left: Contact Information (Vùng chữ nhật bo góc màu sáng xám) -->
+
           <div class="space-y-6">
             <h2 class="text-2xl font-bold text-slate-900">
               Contact Information
@@ -73,7 +63,6 @@
               You can reach out to us using the contact details below. We are here to answer your questions and discuss your project.
             </p>
 
-            <!-- Contact details hiển thị bình thường -->
             <div class="space-y-4 pt-2">
               <div>
                 <h3 class="font-semibold text-slate-900 text-sm mb-1">Email</h3>
@@ -98,7 +87,6 @@
             </div>
           </div>
 
-          <!-- Right: Contact Form (Vùng chữ nhật bo góc màu sáng xám) -->
           <div class="bg-neutral-100 p-6 md:p-8 rounded-xl border border-neutral-200 shadow-sm">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">
               Send a Message
@@ -111,7 +99,7 @@
                 <label for="name" class="block text-xs font-semibold text-slate-700 mb-1">
                   Name *
                 </label>
-                <input type="text" id="name" required placeholder="Your name" 
+                <input type="text" id="name" required placeholder="Your name"
                        class="w-full px-4 py-2.5 rounded-lg border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm" />
               </div>
 
@@ -119,7 +107,7 @@
                 <label for="phone" class="block text-xs font-semibold text-slate-700 mb-1">
                   Phone
                 </label>
-                <input type="tel" id="phone" placeholder="Your phone number" 
+                <input type="tel" id="phone" placeholder="Your phone number"
                        class="w-full px-4 py-2.5 rounded-lg border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm" />
               </div>
 
@@ -127,7 +115,7 @@
                 <label for="email" class="block text-xs font-semibold text-slate-700 mb-1">
                   Email *
                 </label>
-                <input type="email" id="email" required placeholder="you@example.com" 
+                <input type="email" id="email" required placeholder="you@example.com"
                        class="w-full px-4 py-2.5 rounded-lg border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm" />
               </div>
 
@@ -151,12 +139,12 @@
                 <label for="message" class="block text-xs font-semibold text-slate-700 mb-1">
                   Message *
                 </label>
-                <textarea id="message" required rows="4" placeholder="Write your message..." 
+                <textarea id="message" required rows="4" placeholder="Write your message..."
                           class="w-full px-4 py-2.5 rounded-lg border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"></textarea>
               </div>
 
               <div class="pt-2">
-                <button type="submit" class="w-full btn-precision-red justify-center text-sm py-3 font-semibold">
+                <button type="submit" class="w-full btn-primary justify-center text-sm py-3 font-semibold">
                   Send Message
                 </button>
               </div>
@@ -170,10 +158,8 @@
 
   </main>
 
-  <!-- Footer -->
   <div id="site-footer"></div>
 
-  <!-- Scripts -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>

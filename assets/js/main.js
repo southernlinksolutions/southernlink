@@ -1,7 +1,3 @@
-/**
- * SouthernLink Main Script
- * Handles navigation, header/footer rendering, mobile menu, and contact form
- */
 
 const SITE_CONFIG = {
   name: "SouthernLink",
@@ -27,10 +23,10 @@ function renderHeader(activePage = "home") {
     const isActive = link.id === activePage;
     return `
       <li>
-        <a href="${link.href}" 
+        <a href="${link.href}"
            class="px-3.5 py-2 text-sm md:text-base font-medium rounded-lg transition-all duration-200 ${
-             isActive 
-               ? 'text-blue-600 bg-blue-50 font-semibold' 
+             isActive
+               ? 'text-blue-600 bg-blue-50 font-semibold'
                : 'text-slate-700 hover:text-blue-600 hover:bg-slate-50'
            }">
           ${link.label}
@@ -43,10 +39,10 @@ function renderHeader(activePage = "home") {
     const isActive = link.id === activePage;
     return `
       <li>
-        <a href="${link.href}" 
+        <a href="${link.href}"
            class="flex items-center justify-between px-4 py-3 rounded-lg text-base ${
-             isActive 
-               ? 'bg-blue-50 text-blue-600 font-bold' 
+             isActive
+               ? 'bg-blue-50 text-blue-600 font-bold'
                : 'text-slate-700 hover:bg-slate-50 hover:text-blue-600'
            }">
           <span>${link.label}</span>
@@ -56,15 +52,14 @@ function renderHeader(activePage = "home") {
   }).join("");
 
   return `
-    <!-- Main Clean Navigation Bar -->
+
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 transition-shadow duration-300" id="main-nav">
       <div class="container mx-auto px-4 lg:px-8">
         <div class="flex items-center justify-between h-20">
-          
-          <!-- Brand Logo -->
+
           <a href="index.html" class="flex items-center gap-3">
-            <img src="${SITE_CONFIG.logo}" 
-                 alt="${SITE_CONFIG.name} Logo" 
+            <img src="${SITE_CONFIG.logo}"
+                 alt="${SITE_CONFIG.name} Logo"
                  class="h-11 md:h-12 w-auto object-contain transition-transform duration-200 hover:opacity-90"
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
             <div class="hidden items-center gap-2" id="logo-fallback">
@@ -73,28 +68,25 @@ function renderHeader(activePage = "home") {
             </div>
           </a>
 
-          <!-- Desktop Navigation -->
           <div class="hidden md:flex items-center gap-1">
             <ul class="flex items-center gap-1 list-none m-0 p-0">
               ${navItems}
             </ul>
           </div>
 
-          <!-- Action Button (Desktop) -->
           <div class="hidden md:flex items-center gap-4">
-            <a href="contact.html" class="btn-precision-red text-sm font-semibold">
+            <a href="contact.html" class="btn-primary text-sm font-semibold">
               <span>Contact Us</span>
             </a>
           </div>
 
-          <!-- Mobile Hamburger Toggle -->
           <div class="flex md:hidden items-center gap-2">
             <a href="contact.html" class="text-xs font-semibold bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded-lg">
               Contact
             </a>
-            <button id="mobile-menu-btn" 
-                    type="button" 
-                    aria-label="Toggle Navigation Menu" 
+            <button id="mobile-menu-btn"
+                    type="button"
+                    aria-label="Toggle Navigation Menu"
                     class="p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none">
               <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -105,13 +97,12 @@ function renderHeader(activePage = "home") {
         </div>
       </div>
 
-      <!-- Mobile Dropdown Menu -->
       <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 shadow-lg">
         <ul class="flex flex-col gap-1 list-none p-0 mb-4">
           ${mobileNavItems}
         </ul>
         <div class="pt-3 border-t border-slate-100">
-          <a href="contact.html" class="w-full text-center btn-precision-red justify-center text-sm">
+          <a href="contact.html" class="w-full text-center btn-primary justify-center text-sm">
             Contact Us
           </a>
         </div>
@@ -125,11 +116,9 @@ function renderFooter() {
   return `
     <footer class="bg-neutral-100 text-slate-700 pt-12 md:pt-16 pb-8 border-t border-neutral-200 mt-auto">
       <div class="container mx-auto px-4 lg:px-8">
-        
-        <!-- Main Footer Content -->
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 pb-12 border-b border-neutral-200">
-          
-          <!-- Column 1: Company Profile -->
+
           <div class="space-y-4">
             <a href="index.html" class="inline-block">
               <img src="${SITE_CONFIG.logo}" alt="${SITE_CONFIG.name}" class="h-8 md:h-9 w-auto object-contain" />
@@ -142,7 +131,6 @@ function renderFooter() {
             </p>
           </div>
 
-          <!-- Column 2: Quick Links -->
           <div>
             <h4 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4">
               Quick Links
@@ -166,7 +154,6 @@ function renderFooter() {
             </ul>
           </div>
 
-          <!-- Column 3: Core IT Services -->
           <div>
             <h4 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4">
               Core Services
@@ -193,7 +180,6 @@ function renderFooter() {
             </ul>
           </div>
 
-          <!-- Column 4: Contact & Office Info -->
           <div>
             <h4 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4">
               Contact Us
@@ -220,7 +206,6 @@ function renderFooter() {
 
         </div>
 
-        <!-- Bottom Copyright & Compliance Line -->
         <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
           <p class="m-0">
             © ${currentYear} SouthernLink Solutions. All rights reserved.
@@ -235,16 +220,13 @@ function renderFooter() {
   `;
 }
 
-// Global initialization
 document.addEventListener("DOMContentLoaded", () => {
   const pageId = document.body.dataset.page || "home";
-  
-  // Render header
+
   const headerContainer = document.getElementById("site-header");
   if (headerContainer) {
     headerContainer.innerHTML = renderHeader(pageId);
-    
-    // Setup mobile menu toggle
+
     const menuBtn = document.getElementById("mobile-menu-btn");
     const mobileMenu = document.getElementById("mobile-menu");
     const menuIcon = document.getElementById("menu-icon");
@@ -267,13 +249,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Render footer
   const footerContainer = document.getElementById("site-footer");
   if (footerContainer) {
     footerContainer.innerHTML = renderFooter();
   }
 
-  // Set favicon
   let favicon = document.querySelector("link[rel='icon']");
   if (!favicon) {
     favicon = document.createElement("link");
@@ -283,14 +263,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   favicon.href = SITE_CONFIG.icon;
 
-  // Contact form submission handler
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get("promo") === "website50" || urlParams.get("promo") === "50") {
+    const serviceSelect = document.getElementById("service");
+    const messageTextarea = document.getElementById("message");
+    if (serviceSelect) {
+      serviceSelect.value = "Website Design & Development";
+    }
+    if (messageTextarea && !messageTextarea.value) {
+      messageTextarea.value = "Hi SouthernLink, I would like to claim the $50 Website Design Special Offer for my project.";
+    }
+  }
+
   const contactForm = document.getElementById("contact-form");
   if (contactForm) {
     contactForm.addEventListener("submit", (e) => {
       e.preventDefault();
       const statusDiv = document.getElementById("contact-status");
       const submitBtn = contactForm.querySelector("button[type='submit']");
-      
+
       const name = contactForm.querySelector("#name")?.value || "";
       const email = contactForm.querySelector("#email")?.value || "";
       const phone = contactForm.querySelector("#phone")?.value || "";

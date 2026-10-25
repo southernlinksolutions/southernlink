@@ -1,6 +1,4 @@
-/**
- * SouthernLink Banner Slider (Inspired by Precision Software Revolution Slider)
- */
+
 (function() {
   function initHeroSlider() {
     const sliderContainer = document.querySelector('.hero-slider-container');
@@ -15,7 +13,7 @@
 
     let currentIndex = 0;
     let timer = null;
-    const intervalTime = 5500; // 5.5 seconds per slide
+    const intervalTime = 5500;
 
     function showSlide(index) {
       if (index < 0) {
@@ -63,7 +61,6 @@
       }
     }
 
-    // Event Listeners
     if (nextBtn) {
       nextBtn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -87,11 +84,9 @@
       });
     });
 
-    // Pause on mouse enter, resume on mouse leave
     sliderContainer.addEventListener('mouseenter', stopAutoSlide);
     sliderContainer.addEventListener('mouseleave', startAutoSlide);
 
-    // Keyboard navigation
     document.addEventListener('keydown', (e) => {
       const rect = sliderContainer.getBoundingClientRect();
       const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
@@ -106,7 +101,6 @@
       }
     });
 
-    // Touch swipe support for mobile
     let touchStartX = 0;
     let touchEndX = 0;
 
@@ -130,7 +124,6 @@
       }
     }
 
-    // Start on initial load
     startAutoSlide();
   }
 
@@ -180,7 +173,6 @@
     startAuto();
   }
 
-  // Initialize when DOM ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
       initHeroSlider();
