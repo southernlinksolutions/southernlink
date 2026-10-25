@@ -1,5 +1,22 @@
 (function () {
   const DELAY_MS = 800;
+  const SESSION_KEY = "sl_promo_seen";
+
+  function shouldShowPopup() {
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get("showPromo") === "true") return true;
+      return sessionStorage.getItem(SESSION_KEY) !== "true";
+    } catch (e) {
+      return true;
+    }
+  }
+
+  function markPopupSeen() {
+    try {
+      sessionStorage.setItem(SESSION_KEY, "true");
+    } catch (e) {}
+  }
 
   function closePopup() {
     const modal = document.getElementById("sl-promo-modal");
@@ -8,7 +25,11 @@
     document.removeEventListener("click", handleOutsideClick);
   }
 
-  function showPopup() {
+  function showPopup(force = false) {
+    if (!force && !shouldShowPopup()) return;
+
+    markPopupSeen();
+
     let modal = document.getElementById("sl-promo-modal");
     if (!modal) {
       modal = createPopupDOM();
