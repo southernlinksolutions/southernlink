@@ -7,7 +7,7 @@ const SITE_CONFIG = {
   phone: "+61 652 603 468",
   location: "Level 3/89 Pirie St, Adelaide SA 5000",
   logo: "medias/logo.png",
-  icon: "medias/icon.png"
+  icon: "/favicon.png"
 };
 
 const NAV_LINKS = [
@@ -259,9 +259,9 @@ document.addEventListener("DOMContentLoaded", () => {
     favicon = document.createElement("link");
     favicon.rel = "icon";
     favicon.type = "image/png";
+    favicon.href = SITE_CONFIG.icon;
     document.head.appendChild(favicon);
   }
-  favicon.href = SITE_CONFIG.icon;
 
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.get("promo") === "website50" || urlParams.get("promo") === "50") {

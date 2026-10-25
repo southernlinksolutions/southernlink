@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot-Favicons
+Allow: /
+
+Sitemap: https://southernlink.com.au/sitemap.xml
